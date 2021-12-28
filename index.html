@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar {
+            background-color: black;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            position: sticky;
+            top: 0;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        }
+
+        .navbar-mobile {
+            background-color: black;
+            position: sticky;
+            top: 0;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+            display: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+        }
+
+        .nav-link-active {
+            text-decoration: none;
+            padding: 15px;
+            color: white;
+            background-color: #333;
+        }
+
+        .nav-link:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .nav-link-active:hover {
+            color: black;
+            background-color: #CCC;
+        }
+
+        .content {}
+
+        .sidebar {
+            width: 250px;
+            height: calc(100vh - 49px);
+            background-color: #f0f0f0;
+            position: fixed;
+            top: 49px;
+            box-shadow: 5px -5px 6px 2px rgba(0, 0, 0, 0.29);
+        }
+
+        .sidebar-link {
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            color: black;
+        }
+
+        .sidebar h1 {
+            padding-left: 10px;
+        }
+
+        .sidebar-link:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .right-content {
+            margin-left: 250px;
+            margin-top: 20px;
+        }
+
+        .ad-1 {
+            border: 1px solid black;
+            text-align: center;
+            padding: 32px;
+        }
+
+        .ad-2 {
+            border: 1px solid black;
+            text-align: center;
+            padding: 64px;
+        }
+
+        .row {
+            display: flex;
+            padding: 15px;
+        }
+
+        .text {
+            width: 60%;
+        }
+
+        .text h1 {
+            color: #009688;
+        }
+
+        .ads {
+            width: 40%;
+        }
+        .pagination{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .pagination-link{
+            text-decoration: none;   
+            padding: 10px 15px;
+            color: black;
+        }
+        .pagination-link-active{
+            text-decoration: none;   
+            padding: 10px 15px;
+            background-color: black;
+            color: white;
+        }
+        .pagination-link-active:hover{
+            color: black;
+            background-color: gray;
+        }
+        .pagination-link:hover{
+            background-color: black;
+            color: white;
+        }
+        .footer-1{
+            color: white;
+            background-color: gray;
+            padding: 30px 15px;
+        }
+        .footer-2{
+            color: white;
+            background-color: black;
+            padding: 15px 15px;
+        }
+        .footer-link{
+            color: white;
+        }
+        @media screen and (max-width:700px) {
+            .sidebar {
+                display: none;
+            }
+
+            .right-content {
+                margin-left: 10px;
+            }
+
+            .navbar {
+                display: none;
+            }
+
+            .navbar-mobile {
+                display: flex;
+            }
+
+            .row {
+                flex-direction: column;
+            }
+
+            .text {
+                width: 100%;
+            }
+
+            .ads {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="" class="nav-link-active">Logo</a>
+        <a href="" class="nav-link">About</a>
+        <a href="" class="nav-link">Values</a>
+        <a href="" class="nav-link">News</a>
+        <a href="" class="nav-link">Contact</a>
+        <a href="" class="nav-link">Clients</a>
+        <a href="" class="nav-link">Partners</a>
+    </nav>
+    <nav class="navbar-mobile">
+        <a class="nav-link-active" href="">Logo</a>
+        <a style="margin-left: auto;" class="nav-link" href=""><i class="fas fa-bars"></i></a>
+    </nav>
+    <div class="content">
+        <div class="sidebar">
+            <h1>Menu</h1>
+            <a href="" class="sidebar-link">Link</a>
+            <a href="" class="sidebar-link">Link</a>
+            <a href="" class="sidebar-link">Link</a>
+            <a href="" class="sidebar-link">Link</a>
+        </div>
+        <div class="right-content">
+            <div class="row">
+                <div class="text">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque, accusantium sit quis
+                        voluptatem libero laboriosam voluptatum dolor voluptas debitis necessitatibus non vel deleniti
+                        quia ipsum fugit nesciunt, ex esse ut quasi cum voluptate reiciendis explicabo. Ad illum
+                        mollitia, quam necessitatibus, tempora, recusandae nisi earum natus explicabo nobis voluptatibus
+                        dicta?</p>
+                </div>
+                <div class="ads">
+                    <p class="ad-1">AD</p>
+                    <p class="ad-2">AD</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque, accusantium sit quis
+                        voluptatem libero laboriosam voluptatum dolor voluptas debitis necessitatibus non vel deleniti
+                        quia ipsum fugit nesciunt, ex esse ut quasi cum voluptate reiciendis explicabo. Ad illum
+                        mollitia, quam necessitatibus, tempora, recusandae nisi earum natus explicabo nobis voluptatibus
+                        dicta?</p>
+                </div>
+                <div class="ads">
+                    <p class="ad-1">AD</p>
+                    <p class="ad-2">AD</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque, accusantium sit quis
+                        voluptatem libero laboriosam voluptatum dolor voluptas debitis necessitatibus non vel deleniti
+                        quia ipsum fugit nesciunt, ex esse ut quasi cum voluptate reiciendis explicabo. Ad illum
+                        mollitia, quam necessitatibus, tempora, recusandae nisi earum natus explicabo nobis voluptatibus
+                        dicta?</p>
+                </div>
+                <div class="ads">
+                    <p class="ad-1">AD</p>
+                    <p class="ad-2">AD</p>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="" class="pagination-link-active">1</a>
+                <a href="" class="pagination-link">2</a>
+                <a href="" class="pagination-link">3</a>
+                <a href="" class="pagination-link">4</a>
+                <a href="" class="pagination-link">5</a>
+                <a href="" class="pagination-link">»</a>
+            </div>
+            <footer>
+                <div class="footer-1">Footer</div>
+                <div class="footer-2">Powered by <a class="footer-link" href="https://www.w3schools.com/">w3.css</a></div>
+            </footer>
+        </div>
+</body>
+
+</html>
