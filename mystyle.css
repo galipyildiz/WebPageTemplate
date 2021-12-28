@@ -1,0 +1,172 @@
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.navbar-mobile {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    display: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+.nav-link-active {
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    background-color: #333;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav-link-active:hover {
+    color: black;
+    background-color: #CCC;
+}
+
+.content {}
+
+.sidebar {
+    width: 250px;
+    height: calc(100vh - 49px);
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 49px;
+    box-shadow: 5px -5px 6px 2px rgba(0, 0, 0, 0.29);
+}
+
+.sidebar-link {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+.sidebar h1 {
+    padding-left: 10px;
+}
+
+.sidebar-link:hover {
+    background-color: black;
+    color: white;
+}
+
+.right-content {
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.ad-1 {
+    border: 1px solid black;
+    text-align: center;
+    padding: 32px;
+}
+
+.ad-2 {
+    border: 1px solid black;
+    text-align: center;
+    padding: 64px;
+}
+
+.row {
+    display: flex;
+    padding: 15px;
+}
+
+.text {
+    width: 60%;
+}
+
+.text h1 {
+    color: #009688;
+}
+
+.ads {
+    width: 40%;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.pagination-link{
+    text-decoration: none;   
+    padding: 10px 15px;
+    color: black;
+}
+.pagination-link-active{
+    text-decoration: none;   
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+}
+.pagination-link-active:hover{
+    color: black;
+    background-color: gray;
+}
+.pagination-link:hover{
+    background-color: black;
+    color: white;
+}
+.footer-1{
+    color: white;
+    background-color: gray;
+    padding: 30px 15px;
+}
+.footer-2{
+    color: white;
+    background-color: black;
+    padding: 15px 15px;
+}
+.footer-link{
+    color: white;
+}
+@media screen and (max-width:700px) {
+    .sidebar {
+        display: none;
+    }
+
+    .right-content {
+        margin-left: 10px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .ads {
+        width: 100%;
+    }
+}
